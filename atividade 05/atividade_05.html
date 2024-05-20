@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cores.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Minha Rede Social</title>
+</head>
+<body class="azulEspacial_bg branco">
+    <main>
+        <div class="amigos">
+            <h1>Amigos</h1>
+        </div>
+        <div class="comunidades">
+            <h1>Comunidades</h1>
+        </div>
+        <div class="mensagens">
+            <h1>Mensagens</h1>
+        </div>
+        <!-- <div class="tela">
+            <div class="tela-inicial">
+                <div class="perfil">
+                    <img src="perfil.jpeg" alt="Avatar" class="avatar">
+                </div>
+                <div class="informacoes">
+                    <div class="bloco">
+                        <h1>Seguidores</h1>
+                        <p>1543</p>
+                    </div>
+                    <div class="bloco">
+                        <h1>Visitas</h1>
+                        <p>367</p>
+                    </div>
+                    <div class="bloco">
+                        <h1>Postagens</h1>
+                        <p>241</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    
+    </main>
+    <script>
+        window.onload = function() {
+            var elementos = document.querySelectorAll('.amigos, .comunidades, .mensagens');
+            elementos.forEach(function(el) {
+                el.querySelector('h1').addEventListener('click', function() {
+                    el.classList.toggle('centro');
+                });
+            });
+        };
+    </script>
+</body>
+</html>

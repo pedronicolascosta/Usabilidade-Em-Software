@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Reset de estilos */
+body, h1, p, ul, ol, li, a, img, section, div, header, nav, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: "Inter";
+    vertical-align: baseline;
+
+}
+
+/* Estilos para elementos */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 20px;
+    align-items: center;
+    
+}
+
+nav ul li {
+    display: inline;
+}
+
+.branco_bg{
+   border-radius: 0.5rem;
+   padding: 0.3rem;
+}
+   
+
+.branco_bg a{
+    text-decoration: none; 
+}
+
+
+.avatar {
+    vertical-align: middle;
+    width: 20%;
+    height: 10%;
+    border-radius: 50%;
+    align-self: flex-start;
+margin-bottom: 10px;
+    position: relative; /* Adiciona posição absoluta */
+  }
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.postagem img{
+    width: 60%;
+    border-radius: 30px;
+}
+
+.container {
+    border: 2px solid #d84b4b;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+  }
+  
+  /* Clear floats after containers */
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+  .container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Increase the font-size of a span element */
+  .container span {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  /* Add media queries for responsiveness. This will center both the text and the image inside the container */
+  @media (max-width: 500px) {
+    .container {
+      text-align: center;
+    }
+  
+    .container img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+
+    .avatar{
+        width: 20%;
+        height: 20%;
+    }
+  }
+
+
+  .informacoes{
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  
+  .informacoes h1{
+    font-size: 20px;
+  }
+
+  .bloco{
+    background:rgba(255, 255, 255, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(104, 221, 189, 0.1);
+    -webkit-backdrop-filter: blur( 13.5px );
+    -moz-backdrop-filter: blur(12px);
+    -o-backdrop-filter: blur(12px);
+    -ms-backdrop-filter: blur(12px);
+    border-radius: 5px;
+    padding: 5px;
+    width: 20%;
+  }
+
+  .perfil{
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
+.tela {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  z-index: -0;
+}
+
+.amigos {
+  position: fixed;
+  top: 50%;
+  left: 0;
+}
+
+.comunidades {
+  position: fixed;
+  top: 50%;
+  right: 0;
+}
+
+.mensagens {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.centro {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
